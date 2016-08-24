@@ -1,0 +1,40 @@
+{
+  "name": "changelog-ci",
+  "version": "1.0.0",
+  "description": "Monitor pull requests and check that includes the CHANGELOG file",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "compile": "babel -d lib/ src/",
+    "test": "tape -r babel-register tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashlabs/changelog-ci.git"
+  },
+  "keywords": [
+    "changelog",
+    "changelog-ci"
+  ],
+  "author": "Orlando Del Aguila <orlando@hashlabs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hashlabs/changelog-ci/issues"
+  },
+  "homepage": "https://github.com/hashlabs/changelog-ci#readme",
+  "engines": {
+    "node": "6.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.11.6",
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "github": "^2.5.1"
+  }
+}

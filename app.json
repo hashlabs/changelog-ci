@@ -1,0 +1,17 @@
+{
+  "name": "changelog-ci",
+  "description": "Monitor pull requests and check that includes the CHANGELOG file",
+  "repository": "https://github.com/hashlabs/changelog-ci",
+  "logo": "https://avatars3.githubusercontent.com/u/19771262",
+  "keywords": ["node", "express", "github", "pull requests"],
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "A token generated for the account which will comment on your pull requests (i.e. f7c41472410cacded24090d24f70e98995d8dc55) (needs the `repo` rights)",
+      "required": true
+    },
+    "CHANGELOG_FILE": {
+      "description": "The name of your CHANGELOG file",
+      "value": "CHANGELOG.md"
+    }
+  }
+}
