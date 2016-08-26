@@ -24,7 +24,7 @@ git clone https://github.com/hashlabs/changelog-ci.git
 cd changelog-ci
 npm install
 npm run compile
-npm start
+env GITHUB_TOKEN=<github-token> CHANGELOG_FILE=<changelog-file-name> npm start
 ```
 
 Alternatively you can deploy the bot using Heroku by pressing the button below:
